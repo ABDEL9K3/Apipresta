@@ -1,0 +1,59 @@
+/* ==========================================================================
+   API PRESTA - Custom Stylesheet (Logo Inspired Theme)
+   ========================================================================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom Webkit Scrollbar matching the Logo's Silver and Deep Blue */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f8fafc;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #d1d6d8;
+    /* Logo Silver */
+    border-radius: 10px;
+    border: 2px solid #f8fafc;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #55bde9;
+    /* Logo Cyan */
+}
+
+/* Scroll-triggered viewport animations */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Subtle floating animation for contact icons */
+.float-anim {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}

@@ -7,111 +7,118 @@
     <title>À Propos | API PRESTA</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { apiblue: '#005691', apicyan: '#55bde9', apisilver: '#d1d6d8' },
+                    fontFamily: { sans: ['Inter', 'sans-serif'] }
+                }
+            }
         }
-    </style>
+    </script>
 </head>
 
-<body class="bg-slate-50 text-slate-900 antialiased selection:bg-blue-600 selection:text-white">
+<body class="bg-slate-50 text-slate-900 antialiased selection:bg-apicyan selection:text-white">
 
-    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 transition-all duration-300">
+    <nav
+        class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 transition-all duration-300 py-2">
         <div class="max-w-6xl mx-auto px-6 lg:px-8">
-            <div class="flex justify-between h-20 items-center">
-                <a href="index.html" class="flex-shrink-0 flex items-center gap-2">
+            <div class="flex justify-between h-16 items-center">
+                <a href="index.html" class="flex-shrink-0 flex items-center gap-3">
                     <div
-                        class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
-                        A</div>
-                    <span class="font-extrabold text-2xl tracking-tight text-slate-900">API <span
-                            class="text-blue-600">PRESTA</span></span>
+                        class="w-10 h-10 rounded-full border-2 border-apicyan flex items-center justify-center bg-white shadow-sm overflow-hidden">
+                        <span class="text-apiblue font-black text-lg">A</span></div>
+                    <span class="font-extrabold text-2xl tracking-tight text-apiblue">API <span
+                            class="text-apicyan font-light">PRESTA</span></span>
                 </a>
                 <div class="hidden md:flex space-x-8 items-center">
                     <a href="index.html"
-                        class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Accueil</a>
-                    <a href="about.html" class="text-blue-600 font-semibold border-b-2 border-blue-600 pb-1">À
-                        Propos</a>
+                        class="text-slate-600 hover:text-apicyan font-medium transition-colors">Accueil</a>
+                    <a href="about.html" class="text-apiblue font-bold border-b-2 border-apicyan pb-1">À Propos</a>
                     <a href="contact.html"
-                        class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-lg font-semibold transition-all shadow-md shadow-blue-500/30">Devis
+                        class="bg-apiblue hover:bg-apiblue/90 text-white px-6 py-2 rounded-full font-semibold transition-all shadow-md shadow-apiblue/30">Devis
                         Rapide</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <header class="pt-32 pb-16 bg-white border-b border-slate-200">
+    <header class="pt-32 pb-16 bg-white border-b border-slate-200 fade-in-up">
         <div class="max-w-4xl mx-auto px-6 text-center">
-            <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6">Qui Sommes-Nous ?</h1>
+            <h1 class="text-4xl md:text-5xl font-extrabold text-apiblue mb-6">Qui Sommes-Nous ?</h1>
             <p class="text-lg text-slate-600 leading-relaxed">
                 Expérimentée dans les domaines de la propreté et de l'hygiène, API PRESTA propose une offre de
-                prestation et de partenariat afin de vous garantir un environnement propre et propice.
+                prestation et de partenariat afin de vous garantir un environnement propre et propice. [cite: 8]
             </p>
         </div>
     </header>
 
-    <main class="py-20 max-w-6xl mx-auto px-6 lg:px-8">
+    <main class="py-20 max-w-6xl mx-auto px-6 lg:px-8 fade-in-up">
         <div class="grid md:grid-cols-2 gap-16 items-center">
             <div class="space-y-6 text-slate-600 leading-relaxed text-lg">
                 <p>
-                    <strong class="text-slate-900">SARL API</strong> est votre société de nettoyage de référence,
-                    proposant une large gamme de prestations de qualité. Notre objectif primordial est d'assurer un
-                    environnement sain et propre pour tous nos clients.
+                    <strong class="text-apiblue">SARL API</strong> est votre société de nettoyage de référence,
+                    proposant une large gamme de prestations de qualité. [cite: 10] Notre objectif primordial est
+                    d'assurer un environnement sain et propre pour tous nos clients. [cite: 11]
                 </p>
                 <p>
                     Nous intervenons avec une expertise spécialisée dans tout type de locaux : résidences de haut
-                    standing, salles des fêtes, bâtiments administratifs, écoles, bungalows, et parkings.
+                    standing, salles des fêtes, bâtiments administratifs, écoles, bungalows, and parkings. [cite: 13]
                 </p>
-                <ul class="space-y-3 mt-6 border-l-4 border-blue-600 pl-4">
-                    <li class="flex items-center gap-2"><span class="text-blue-600 font-bold">✓</span> Professionnalisme
+                <ul class="space-y-3 mt-6 border-l-4 border-apicyan pl-4">
+                    <li class="flex items-center gap-2"><span class="text-apicyan font-bold">✓</span> Professionnalisme
                         et rigueur</li>
-                    <li class="flex items-center gap-2"><span class="text-blue-600 font-bold">✓</span> Équipes formées
-                        et qualifiées</li>
-                    <li class="flex items-center gap-2"><span class="text-blue-600 font-bold">✓</span> Produits
+                    <li class="flex items-center gap-2"><span class="text-apicyan font-bold">✓</span> Équipes formées et
+                        qualifiées [cite: 14]</li>
+                    <li class="flex items-center gap-2"><span class="text-apicyan font-bold">✓</span> Produits
                         respectueux de l'environnement</li>
                 </ul>
             </div>
 
             <div
-                class="bg-slate-100 rounded-3xl p-10 flex flex-col justify-center items-center text-center h-full border border-slate-200 shadow-inner">
+                class="bg-gradient-to-br from-slate-50 to-apisilver/20 rounded-[40px] p-10 flex flex-col justify-center items-center text-center h-full border border-apisilver/50 shadow-inner relative overflow-hidden">
+                <div class="absolute -right-10 -top-10 w-40 h-40 bg-apicyan/10 rounded-full blur-2xl"></div>
                 <div
-                    class="w-20 h-20 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-4xl mb-6 shadow-sm">
-                    🤝
-                </div>
-                <h3 class="text-2xl font-bold text-slate-900 mb-2">Un Partenariat de Confiance</h3>
+                    class="w-24 h-24 bg-white border border-apicyan/30 rounded-full flex items-center justify-center text-4xl mb-6 shadow-md float-anim">
+                    🤝</div>
+                <h3 class="text-2xl font-bold text-apiblue mb-2">Un Partenariat de Confiance</h3>
                 <p class="text-slate-600 text-sm">
                     Nous nous adressons aux professionnels, aux collectivités et aux particuliers avec la même exigence
-                    d'excellence.
+                    d'excellence. [cite: 17]
                 </p>
             </div>
         </div>
     </main>
 
-    <section class="bg-slate-900 text-white py-20 mt-10">
-        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+    <section class="bg-apiblue text-white py-20 mt-10 relative overflow-hidden fade-in-up">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8 relative z-10">
             <div class="text-center mb-12">
                 <h2 class="text-3xl font-bold mb-4">Nos Implantations</h2>
-                <p class="text-slate-400">Une présence stratégique pour intervenir rapidement sur vos sites.</p>
+                <p class="text-apicyan">Une présence stratégique pour intervenir rapidement sur vos sites. [cite: 19]
+                </p>
             </div>
 
             <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                 <div
-                    class="bg-slate-800 border border-slate-700 p-8 rounded-2xl hover:border-blue-500 transition-colors">
-                    <div class="text-3xl mb-4">🇫🇷</div>
-                    <h3 class="text-xl font-bold mb-2">Direction Europe</h3>
-                    <p class="text-slate-400 mb-4">16 Avenue de la Pyramide<br>93290 Tremblay, France</p>
-                    <div class="text-sm font-mono text-blue-400 space-y-1">
-                        <p>📞 +33 (0)6 05 82 39 58</p>
+                    class="bg-slate-900/40 backdrop-blur-sm border border-apicyan/30 p-8 rounded-3xl hover:border-apicyan transition-colors">
+                    <div class="text-4xl mb-4">🇫🇷</div>
+                    <h3 class="text-xl font-bold mb-2">Direction Europe [cite: 20]</h3>
+                    <p class="text-apisilver mb-4">16 Avenue de la Pyramide<br>93290 Tremblay, France [cite: 21]</p>
+                    <div class="text-sm font-mono text-apicyan space-y-1">
+                        <p>📞 +33 (0)6 05 82 39 58 [cite: 21]</p>
                         <p>📞 +33 (0)7 58 30 85 86</p>
                     </div>
                 </div>
 
                 <div
-                    class="bg-slate-800 border border-slate-700 p-8 rounded-2xl hover:border-blue-500 transition-colors">
-                    <div class="text-3xl mb-4">🇩🇿</div>
-                    <h3 class="text-xl font-bold mb-2">Direction Afrique du Nord</h3>
-                    <p class="text-slate-400 mb-4">Siège Social & Opérations<br>Annaba, Algérie</p>
-                    <div class="text-sm font-mono text-blue-400 space-y-1">
-                        <p>✉️ contact@apipresta.com</p>
+                    class="bg-slate-900/40 backdrop-blur-sm border border-apicyan/30 p-8 rounded-3xl hover:border-apicyan transition-colors">
+                    <div class="text-4xl mb-4">🇩🇿</div>
+                    <h3 class="text-xl font-bold mb-2">Direction Afrique du Nord [cite: 22]</h3>
+                    <p class="text-apisilver mb-4">Siège Social & Opérations<br>Annaba, Algérie [cite: 23]</p>
+                    <div class="text-sm font-mono text-apicyan space-y-1">
+                        <p>✉️ contact@apipresta.com [cite: 24]</p>
                         <p>🌐 Interventions sur tout l'est algérien</p>
                     </div>
                 </div>
@@ -119,15 +126,17 @@
         </div>
     </section>
 
-    <footer class="bg-slate-950 text-slate-400 py-12 text-center border-t border-slate-900">
+    <footer class="bg-slate-950 text-apisilver py-12 text-center border-t border-apiblue/20">
         <div class="max-w-6xl mx-auto px-6">
-            <div class="text-2xl font-bold text-white mb-4">API <span class="text-blue-500">PRESTA</span></div>
-            <div class="text-sm">
+            <div class="text-2xl font-bold text-white mb-4">API <span class="text-apicyan font-light">PRESTA</span>
+            </div>
+            <div class="text-sm opacity-60">
                 &copy; 2026 API PRESTA. Tous droits réservés.
             </div>
         </div>
     </footer>
 
+    <script src="js/app.js"></script>
 </body>
 
 </html>
